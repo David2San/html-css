@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/David2San" target="_blank" rel="external">repositório público no Github</a></p> <!-- target="_blank" abre o link em uma nova aba, rel="external" indica que é um link externo -->
+
+    <p>Você tambem pode acessar o meu <a href="https://www.youtube.com/@JogosDiferentes33" target="_parent">canal gratuito do Youtube</a></p> <!-- target="_parent" abre o link na janela pai -->
+
+    <p>Você tambem pode acessar o <a href="google.com" target="_self">google</a></p> <!-- target="_self" abre o link na mesma aba -->
+
+    <p>Você tambem pode acessar o meu <a href="https://www.linkedin.com/in/david-santos-757314207/" target="_top">linkedin</a></p> <!-- target="_top" abre o link na janela principal, útil para páginas dentro de iframes -->
+
+    <h1>Usando links internos</h1>
+
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">Segunda página</a></p> <!-- Link para a segunda página do site -->
+
+    <p>Você também pode acessar a página de <a href="noticias/pag003.html" rel="next">notícias</a></p> <!-- Link para a página de notícias dentro da pasta noticias -->
+    
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/livroz.pdf" download="livroz.pdf" type="aplication/pdf">Baixar o livro em PDF</a></li> <!-- Link para download de um arquivo PDF -->
+        <li><a href="livro/livroz.zip" download="livroz.zip"  type="aplication/zip">Livro compactado em ZIP</a></li> <!-- Link para download de um arquivo ZIP -->
+    </ul>
+
+
+
+</body>
+</html>
