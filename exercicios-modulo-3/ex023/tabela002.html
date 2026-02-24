@@ -4,8 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { 
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        .num {
+            text-align: right;
+        }
+        .porc {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+     -->
+    <table>
+        <caption>População dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 50px;">% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+                <td class="porc">21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+                <td class="porc">10,1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+                <td class="porc">8,3%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+                <td class="porc">7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+                <td class="porc">5,5%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+                <td class="porc">5,4%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.055.149</td>
+                <td class="porc">1,5%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.252.502</td>
+                <td class="porc">3,5%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.113.540</td>
+                <td class="porc">3,4%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.616.621</td>
+                <td class="porc">4,6%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.157.740</td>
+                <td class="porc">4,4%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+                <td class="porc">2,0%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.039.277</td>
+                <td class="porc">1,9%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.064.052</td>
+                <td class="porc">1,9%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.534.165</td>
+                <td class="porc">1,7%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+                <td class="porc">3,4%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.351.543</td>
+                <td class="porc">1,6%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.281.480</td>
+                <td class="porc">1,6%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+                <td class="porc">0,4%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">877.613</td>
+                <td class="porc">0,4%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.796.460</td>
+                <td class="porc">0,9%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+                <td class="porc">0,3%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.572.866</td>
+                <td class="porc">0,8%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>212.553.300</strong></td>
+                <td class="porc"><strong>100%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero ex cumque assumenda facilis optio, sapiente minus! Quisquam commodi nam iure animi modi labore magnam veniam hic, voluptatibus recusandae voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur, adipisci totam asperiores commodi sunt neque? Excepturi quas velit asperiores neque modi eum! Enim inventore eos eum atque illum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero saepe molestias, minus quia, asperiores cum nesciunt perferendis dolore architecto quis excepturi nulla et nemo ratione, esse commodi. Excepturi, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident praesentium quo ipsum perspiciatis, ab vitae cupiditate excepturi quam, temporibus reprehenderit nobis non voluptatem odit maxime molestiae at quod quas sed?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero ex cumque assumenda facilis optio, sapiente minus! Quisquam commodi nam iure animi modi labore magnam veniam hic, voluptatibus recusandae voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur, adipisci totam asperiores commodi sunt neque? Excepturi quas velit asperiores neque modi eum! Enim inventore eos eum atque illum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero saepe molestias, minus quia, asperiores cum nesciunt perferendis dolore architecto quis excepturi nulla et nemo ratione, esse commodi. Excepturi, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident praesentium quo ipsum perspiciatis, ab vitae cupiditate excepturi quam, temporibus reprehenderit nobis non voluptatem odit maxime molestiae at quod quas sed?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero ex cumque assumenda facilis optio, sapiente minus! Quisquam commodi nam iure animi modi labore magnam veniam hic, voluptatibus recusandae voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur, adipisci totam asperiores commodi sunt neque? Excepturi quas velit asperiores neque modi eum! Enim inventore eos eum atque illum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero saepe molestias, minus quia, asperiores cum nesciunt perferendis dolore architecto quis excepturi nulla et nemo ratione, esse commodi. Excepturi, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident praesentium quo ipsum perspiciatis, ab vitae cupiditate excepturi quam, temporibus reprehenderit nobis non voluptatem odit maxime molestiae at quod quas sed?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero ex cumque assumenda facilis optio, sapiente minus! Quisquam commodi nam iure animi modi labore magnam veniam hic, voluptatibus recusandae voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur, adipisci totam asperiores commodi sunt neque? Excepturi quas velit asperiores neque modi eum! Enim inventore eos eum atque illum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero saepe molestias, minus quia, asperiores cum nesciunt perferendis dolore architecto quis excepturi nulla et nemo ratione, esse commodi. Excepturi, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident praesentium quo ipsum perspiciatis, ab vitae cupiditate excepturi quam, temporibus reprehenderit nobis non voluptatem odit maxime molestiae at quod quas sed?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero ex cumque assumenda facilis optio, sapiente minus! Quisquam commodi nam iure animi modi labore magnam veniam hic, voluptatibus recusandae voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur, adipisci totam asperiores commodi sunt neque? Excepturi quas velit asperiores neque modi eum! Enim inventore eos eum atque illum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero saepe molestias, minus quia, asperiores cum nesciunt perferendis dolore architecto quis excepturi nulla et nemo ratione, esse commodi. Excepturi, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident praesentium quo ipsum perspiciatis, ab vitae cupiditate excepturi quam, temporibus reprehenderit nobis non voluptatem odit maxime molestiae at quod quas sed?</p>
 </body>
 </html>
